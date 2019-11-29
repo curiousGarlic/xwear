@@ -27,6 +27,7 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
+  border-radius: 5px;
 `;
 
 export const BackgroundImage = styled.div`
@@ -36,6 +37,7 @@ export const BackgroundImage = styled.div`
   background-position: center;
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+  border-radius: 5px;
 `;
 
 export const CollectionFooterContainer = styled.div`
