@@ -15,7 +15,6 @@ export const LogoContainer = styled(Link)`
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 `;
 
 export const OptionsContainer = styled.div`
@@ -30,4 +29,3 @@ export const OptionLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
 `;
-
