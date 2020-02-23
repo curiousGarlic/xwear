@@ -3,14 +3,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyC1lgXXTQt23w084P-X1VcjaJINk_SkChc",
-  authDomain: "ecommerce-379b3.firebaseapp.com",
-  databaseURL: "https://ecommerce-379b3.firebaseio.com",
-  projectId: "ecommerce-379b3",
-  storageBucket: "ecommerce-379b3.appspot.com",
-  messagingSenderId: "278588882210",
-  appId: "1:278588882210:web:78b1e66577e0585b27397b",
-  measurementId: "G-9B3FSY1LZW"
+  apiKey: "AIzaSyDmf0YkArvIM9zgi6t8x_sdMSS9rP2Crbg",
+  authDomain: "xwear-x.firebaseapp.com",
+  databaseURL: "https://xwear-x.firebaseio.com",
+  projectId: "xwear-x",
+  storageBucket: "xwear-x.appspot.com",
+  messagingSenderId: "96008570066",
+  appId: "1:96008570066:web:239971e2bae109a148590b",
+  measurementId: "G-X1CFRM1NKJ"
 };
 
 firebase.initializeApp(config);
@@ -39,6 +39,18 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
   return userRef;
 };
+
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey);
+
+  const batch = firestore.batch();
+  objectsToAdd.forEach(obj => {
+    const newDocRef = collectionRef.doc();
+    batch.set(newDocRef, obj);
+  })
+
+  return await batch.commit()
+}; 
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
