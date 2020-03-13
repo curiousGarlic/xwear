@@ -1,4 +1,3 @@
-// import SHOP_DATA from './shop.data';
 import ShopActionTypes from './shop.types';
 
 const INITIAL_STATE = {
@@ -13,7 +12,7 @@ const shopReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isFetching: true
-      }
+      };
     case ShopActionTypes.FETCH_COLLECTIONS_SUCCESS:
       return {
         ...state,

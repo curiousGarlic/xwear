@@ -29,7 +29,7 @@ const StripeCheckoutButton = ({ price }) => {
   return (
     <StripeCheckout
       label='Pay Now'
-      name='XWEAR'
+      name='XWEAR Inc.'
       billingAddress
       shippingAddress
       image=''

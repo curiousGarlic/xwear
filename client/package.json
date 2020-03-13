@@ -1,9 +1,8 @@
 {
   "name": "xwear",
   "version": "0.1.0",
-  "proxy": "http://locahost:5000",
   "private": true,
-  "license": "UNLICENSED",
+  "proxy": "http://locahost:5000",
   "dependencies": {
     "axios": "^0.19.2",
     "firebase": "6.0.2",
