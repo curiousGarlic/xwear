@@ -19,7 +19,7 @@ export const CheckoutHeaderContainer = styled.div`
   height: 40px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid indigo;
 `;
 
 export const HeaderBlockContainer = styled.div`
